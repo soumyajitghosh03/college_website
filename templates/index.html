@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body  style="background-color:#CDEEEF">
+    <header  style=" position: fixed;top: 0; width: 100%">
+        <div class="up-nav">
+            <div class="info">
+               <b style="color: aliceblue;"> 📧 info.ac.in / buie.bankura@gmail.com     📞 9153056388 / 1800313000222 (Toll Free)</b>
+            </div>
+            <div class="info2">
+                <button type="button" class="btn btn-outline-light" style="background: transparent; color: aliceblue;border-radius: 25px;">Review</button>
+            </div>
+            <div class="info2">
+                <button type="button" class="btn btn-outline-light" style="background: transparent; color: aliceblue;border-radius: 25px;">Enquiry</button>
+            </div>
+            <div class="info2">
+                <button type="button" class="btn btn-outline-light" style="background: transparent; color: aliceblue;border-radius: 25px;">IQAC</button>
+            </div>
+            <div class="info2">
+                <button type="button" class="btn btn-outline-light" style="background: transparent; color: aliceblue;border-radius: 25px;">NIRF</button>
+            </div>
+            <div class="info2">
+                <button type="button" class="btn btn-outline-light" style="background: transparent; color: aliceblue;border-radius: 25px;">Contact us</button>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="campus border">
+                <b style="font-size: large;"><a href="/" style="text-decoration:none; color : white">Home</a></b>
+            </div>
+            <div class="campus border">
+                <b style="font-size: large;"><a href="/about" style="text-decoration:none; color : white">About us</a></b>
+            </div>
+            <div class="campus border">
+                <b style="font-size: large;"><a href="/academics" style="text-decoration:none; color : white">Academics</a></b>
+            </div>
+            <div class="campus border">
+                <b style="font-size: large;"><a href="/campus" style="text-decoration:none; color : white">Campus</a></b>
+            </div>
+            <div class="campus border">
+                <b style="font-size: large;"><a href="/hostel" style="text-decoration:none; color : white">Hostel</a></b>
+            </div>
+            <div class="campus border">
+                <b style="font-size: large;"><a href="/admission" style="text-decoration:none; color : white">Admission</a></b>
+            </div>
+
+            <div class="campus border">
+                <b style="font-size: large;"><a href="/faculty" style="text-decoration:none; color : white">submit Feedback</a></b>
+            </div>
+            {% comment %} <div class="campus border">
+                <b style="font-size: large;"><a href="/contact" style="text-decoration:none; color : white">Contact us</a></b>
+            </div> {% endcomment %}
+            <div class="campus">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+            </div>
+        </div>
+    </header>
+    {% block body %} {% endblock body %}
+    <footer>
+        <div class="foot-panel4" style=" position: fixed;bottom: 0; width: 100%; padding-top: 10px">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>made by <b style="color:#1ADFE9">Soumyajit Ghosh</b>, 18th February 2025</a>
+                <a>© 1998-2025, buie.ac.in, Inc. or its affiliates</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
